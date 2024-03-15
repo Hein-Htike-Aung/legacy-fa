@@ -1,1 +1,39 @@
-/* You can add global styles to this file, and also import other style files */
+html,
+body {
+  height: 100%;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-color: aliceblue;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@page {
+  size: auto;
+  margin: 0;
+}
+
+@page :footer {
+  display: none;
+}
+
+@page :header {
+  display: none;
+}
+
+@media print {
+  @page {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+.default-color {
+  color: #29de98;
+}
