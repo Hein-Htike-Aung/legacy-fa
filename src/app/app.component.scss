@@ -84,10 +84,13 @@
     flex: 6;
     width: 100vw;
     min-height: calc(100vh - 140px);
-    max-height: calc(100vh - 140px);
+    max-height: 100vh;
     margin-right: 15px;
+    display: flex;
+    flex-direction: column;
 
     .header {
+      flex: 1;
       display: flex;
       padding: 20px;
       height: 30px;
@@ -157,6 +160,7 @@
     }
 
     .sale {
+      flex: 1;
       padding: 20px;
       background: white;
       border-radius: 10px;
@@ -274,13 +278,14 @@
     }
 
     .charts {
+      flex: 3;
       display: flex;
       gap: 5px;
 
       .weekly-sale-chart {
         flex: 1;
         width: 200px;
-        height: 160px;
+        min-height: 160px;
         overflow: hidden;
         padding: 20px;
         background: white;
@@ -290,8 +295,11 @@
     }
 
     .charts-2 {
+      flex: 3;
       display: flex;
       gap: 5px;
+      margin-bottom: 20px;
+
 
       table {
         width: 100%;
@@ -300,7 +308,7 @@
       .weekly-sale-chart {
         flex: 1;
         width: 200px;
-        height: 160px;
+        min-height: 160px;
         overflow: hidden;
         padding: 20px;
         background: white;
@@ -311,7 +319,7 @@
       .recent-orders {
         flex: 2;
         width: 200px;
-        height: 160px;
+        min-height: 160px;
         overflow: hidden;
         padding: 20px;
         background: white;
