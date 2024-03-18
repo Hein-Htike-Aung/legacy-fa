@@ -126,14 +126,29 @@
     </div>
     <!-- charts -->
     <div class="charts">
-      <div id="weekly-sale-chart" class="weekly-sale-chart"></div>
-      <div id="sale-chart" class="weekly-sale-chart"></div>
-      <div id="profit-chart" class="weekly-sale-chart"></div>
-      <div id="product-chart" class="weekly-sale-chart"></div>
+      <div class="weekly-sale-chart">
+        Weekly Sale
+        <div id="weekly-sale-chart" class="weekly-sale-chart"></div>
+      </div>
+      <div class="weekly-sale-chart">
+        Sales
+        <div id="sale-chart" class="weekly-sale-chart"></div>
+      </div>
+      <div class="weekly-sale-chart">
+        Profit
+        <div id="profit-chart" class="weekly-sale-chart"></div>
+      </div>
+      <div class="weekly-sale-chart">
+        Product Class
+        <div id="product-chart" class="weekly-sale-chart"></div>
+      </div>
     </div>
     <!-- charts - 2-->
     <div class="charts-2">
-      <div id="customerSatisficationChart" class="weekly-sale-chart"></div>
+      <div class="weekly-sale-chart">
+        Customer Satisfaction
+        <div id="customerSatisficationChart" class="weekly-sale-chart"></div>
+      </div>
       <div class="recent-orders">
         <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
           <!--- Note that these columns can be defined in any order.
@@ -167,7 +182,10 @@
           <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
         </table>
       </div>
-      <div id="sale-target" class="weekly-sale-chart"></div>
+      <div class="weekly-sale-chart">
+        Sale Target
+        <div id="sale-target" class="weekly-sale-chart"></div>
+      </div>
     </div>
   </div>
 </div>

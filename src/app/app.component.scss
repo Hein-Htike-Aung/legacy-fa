@@ -1,16 +1,22 @@
 .layout {
   display: flex;
   background: #dadada;
+  position: relative;
 
   .sidebar {
     flex: 1;
-    width: 100vw;
+    width: 200px;
     min-height: calc(100vh - 140px);
     max-height: calc(100vh - 140px);
     margin: 20px;
     padding: 50px 20px;
     border-radius: 10px;
     background: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    // overflow-y: auto;
 
     .sidebar-logo {
       display: flex;
@@ -82,7 +88,9 @@
 
   .content {
     flex: 6;
-    width: 100vw;
+    left: 150px;
+    padding-left: 280px;
+    overflow-y: auto;
     min-height: calc(100vh - 140px);
     max-height: 100vh;
     margin-right: 15px;
@@ -299,7 +307,6 @@
       display: flex;
       gap: 5px;
       margin-bottom: 20px;
-
 
       table {
         width: 100%;
